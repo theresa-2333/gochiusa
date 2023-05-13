@@ -1,0 +1,33 @@
+body{
+	background: url(../img/pic_002.png)no-repeat;
+	border-radius: 10px;
+	background-size: 100%;
+}
+h1{
+	text-align: center;
+	color: #f4c09b;
+	text-shadow: #f4c09b 0.1em 0.1em 0.2em;
+	margin: 50px auto;
+}
+#main_div{
+	border-radius: 20px;
+	width: 1400px;
+	height: 800px;
+	background-color: rgba(254, 255, 255,0.7);
+	margin:20px auto;
+}
+#cocoa,#chino,#rize{
+	margin-top:50px ;
+	transition:all 1s ease;
+}
+#cocoa:hover{
+	transform: scale(1.2); // 放大1.5倍
+	 // 设置加载时间
+}
+#chino:hover{
+	transform: scale(1.2); // 放大1.5倍
+	 // 设置加载时间
+}#rize:hover{
+	transform: scale(1.2); // 放大1.5倍
+	 // 设置加载时间
+}
