@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #embed1 {
+            float: left;
+        }
+
+        #embed2 {
+            float: right;
+        }
+
+        #main {
+            border-radius: 20px;
+            background-color: rgba(240, 204, 168, 0.5);
+            margin: 0px auto;
+        }
+
+        #big_img {
+            border-radius: 10px;
+        }
+
+        #top_title {
+            text-align: center;
+            color: #c4a396;
+            font-size: 28px;
+        }
+    </style>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<body style="overflow-x:hidden">
+    <div class="row">
+        <div class="col-2">
+            <embed id="embed1" src="img/deco_side.svg" type="">
+        </div>
+        <div class="col-8" id="main">
+            <div class="row m-auto" style="width: 70%;">
+                <div id="top_title" class="col-12">
+                    <h1 class="mt-3">第十二话</h1>
+                    <h3 class="mt-3">我可以迈出那一步是因为你在看着我</h3>
+                </div>
+                <div class="col-12 mt-5 mb-3">
+                    <img id="main-image" src="img/00000122.jpg" alt="" class="w-100 m-auto ">
+                </div>
+                <div class="col-4 mt-3 ">
+                    <img id="big_img" src="img/00000122.jpg" onclick="changeImage(this)" alt=""
+                        class="w-100 m-auto secondary-image ">
+                </div>
+                <div class="col-4 mt-3 ">
+                    <img id="big_img" src="img/00000123.jpg" onclick="changeImage(this)" alt=""
+                        class="w-100 m-auto secondary-image">
+                </div>
+                <div class="col-4 mt-3 ">
+                    <img id="big_img" src="img/00000124.jpg" onclick="changeImage(this)" alt=""
+                        class="w-100 m-auto secondary-image">
+                </div>
+                <div class="col-4 mt-3 mb-3">
+                    <img id="big_img" src="img/00000125.jpg" onclick="changeImage(this)" alt=""
+                        class="w-100 m-auto secondary-image">
+                </div>
+                <div class="col-4 mt-3 mb-3">
+                    <img id="big_img" src="img/00000126.jpg" onclick="changeImage(this)" alt=""
+                        class="w-100 m-auto secondary-image">
+                </div>
+                <div class="col-4 mt-3 mb-3">
+                    <img id="big_img" src="img/00000127.jpg" onclick="changeImage(this)" alt=""
+                        class="w-100 m-auto secondary-image">
+                </div>
+                <a href="index.html" style="text-decoration: none; text-align: center; font-weight: 800;
+                font-size: 30px;
+                color: #c4a396;" class="m-auto">Home</a>
+            </div>
+        </div>
+        <div class="col-2">
+            <embed id="embed2" src="img/deco_side.svg" type="">
+        </div>
+    </div>
+    <div id="footer" class="row mt-5">
+        <div class="col">
+            <span style=" position: absolute; bottom: 0px;" class="ml-5 mb-5">版权所有 2023© LSZ </span>
+        </div>
+        <div class="col">
+            <img src="img/chiya.png" alt="" style="float: right;" class="w-100">
+        </div>
+    </div>
+    <script>
+        var mainImage = document.getElementById("main-image");
+        var secondaryImages = document.getElementsByClassName("secondary-image");
+
+        function changeImage(image) {
+            mainImage.src = image.src;
+        }
+    </script>
+    <script src="js/jquery-3.4.1.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
+</body>
+
+</html>
